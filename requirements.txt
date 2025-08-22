@@ -8,4 +8,5 @@ faiss-cpu==1.7.4
 accelerate==0.24.1
 python-dotenv==1.0.0
 PyPDF2==3.0.1
+pypdf
 tqdm==4.66.1
