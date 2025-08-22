@@ -1,6 +1,7 @@
 import os
 import sys
-from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
+from langchain_community.document_loaders.pdf import PyPDFLoader
+from langchain_community.document_loaders.directory import DirectoryLoader
 from logger import logging
 from exception import customexception
 
