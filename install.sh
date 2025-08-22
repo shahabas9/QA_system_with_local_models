@@ -12,7 +12,7 @@ elif command -v python &> /dev/null; then
 else
     echo "Python is not installed."
     echo
-    echo "Please install Python 3.8 or higher using your package manager:"
+    echo "Please install Python 3.10 or higher using your package manager:"
     echo
     echo "For Ubuntu/Debian:"
     echo "  sudo apt update && sudo apt install python3 python3-pip python3-venv"
@@ -42,7 +42,7 @@ PYTHON_VERSION=$($PYTHON_CMD -c 'import sys; print(".".join(map(str, sys.version
 echo "Python version: $PYTHON_VERSION"
 
 # Verify Python version is 3.8 or higher
-if [[ $(echo "$PYTHON_VERSION < 3.8" | bc -l) -eq 1 ]]; then
+if [[ $(echo "$PYTHON_VERSION < 3.10" | bc -l) -eq 1 ]]; then
     echo "Error: Python 3.8 or higher is required. Found version $PYTHON_VERSION"
     echo "Please upgrade your Python installation."
     exit 1
